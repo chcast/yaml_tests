@@ -1,0 +1,21 @@
+---
+# Make a copy of the configuration files
+- name: Backup RSCD config files
+  hosts: <hostname>
+  win_copy:
+    src: C:\Windows\rsc\exports
+    dest: D:\Installers
+- name: Copy some files
+  win_copy:
+    src: C:\Windows\rsc\secure
+    dest: D:\Installers
+- name: Copy some files
+  win_copy:
+    src: C:\Windows\rsc\users.local
+    dest: D:\Installers
+# Install msi
+- name: RSCD agent msi install
+  win_package:
+     path: D://Installers/blah.msi
+     state: present
+     

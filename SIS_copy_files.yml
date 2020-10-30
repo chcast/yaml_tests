@@ -1,0 +1,6 @@
+---
+#copy stuff
+- name: Copy stuff from ansible node to target host
+  win_copy:
+  src: /home/SGCORE-Chcast.padm/harden/
+  dest: /home/SGCORE-Chcast.padm/target_folder

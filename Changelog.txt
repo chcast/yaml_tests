@@ -1,0 +1,6 @@
+
+#Glorious Changelog Galore
+
+30/05/2018 - Added pip_install.yml. Removed add_users.yml
+05/09/2018 - Removed yum install. Added msi install pb
+31/10/2020 - Removed pip_install.yml. Testing pull stuff. Still tinkering
